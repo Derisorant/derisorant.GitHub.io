@@ -20,7 +20,7 @@ btn.addEventListener('click', () => {
 function imgWidth() {
   const imgW = document.getElementById('thumbnail-img').clientWidth;
   console.log(imgW)
-}
+};
 
 
 // Background Button
