@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/youtube-sans');
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
+body {
+background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(https://gifdb.com/images/thumbnail/anime-rain-swamp-3fkql7s9ykask3qh.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.outline {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+
+.music {
+    font-family: 'YouTube Sans';
+    color: white;
+    text-align: center;
+}
+
+.backG {
+    position: relative;
+    vertical-align: middle;
+    margin-top: 15%;
+    background-color: #111111;
+    width: fit-content;
+    height: fit-content;
+    box-shadow:
+        0px 5px 10px #181818,
+        5px 0px 10px #181818,
+        -5px 0px 10px #181818;
+}
+
+.status {
+    font-family: 'San Francisco';
+    font-weight: bold;
+    background: none;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: medium;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    margin-left: 1.5%;
+    
+}
+
+.back {
+    position: relative;
+    vertical-align: middle;
+    background-color: #678d58;
+}
+
+.block {
+    background-color: white;
+    width: 1000px;
+}
+
+.pfp {
+    border-radius: 50%;
+    width: 20%;
+    z-index: 69;
+    box-shadow:
+    0px 7.5px 10px black,
+    0px -0.5px 7.5px white;
+
+
+    visibility: visible;
+    margin-top: -8%;
+}
+
+.visPfp {
+    border-radius: 50%;
+    width: 7.5%;
+    z-index: 69;
+    box-shadow: 0px 7.5px 10px black;
+}
+
+
+
+
