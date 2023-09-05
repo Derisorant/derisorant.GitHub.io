@@ -97,19 +97,20 @@ button {
 }
 
 .backgroundE {
-    border: none;
     background-color: #111111;
+    height: 50%;
     width: fit-content;
-    padding: 0 20px;
+    padding: 0px 7.5px;
 }
 
 .mark {
     font-family: 'San Francisco';
     font-weight: bold;
     color: white;
-    background: none;
-    border: none;
-    text-align: center;
+    background: #111111;
     text-decoration: none;
     font-size: small;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 7.5px;
 }
