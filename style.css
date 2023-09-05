@@ -35,7 +35,6 @@
 }
 
 .backG {
-    position: relative;
     vertical-align: middle;
     margin-top: 15%;
     background-color: #111111;
@@ -114,7 +113,3 @@ button {
     text-decoration: none;
     font-size: small;
 }
-
-
-
-
