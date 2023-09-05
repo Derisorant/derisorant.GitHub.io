@@ -19,7 +19,7 @@
 <body class="body">
 
     <!-- Covering Container -->
-    <div class="container-xxl backG mx-auto rounded-5">
+    <div class="container-xxl backG position-absolute top-50 start-50 translate-middle rounded-5">
 
         <!-- Profile Picture -->
         <div class="container-fluid d-flex" style="justify-content: center;">
@@ -35,20 +35,21 @@
             </button>
         </div>
 
-        <!-- Youtube Music Embed -->
-        <div class="container d-flex mx-auto mt-3 rounded justify-content-center">
-            <iframe style="width: 480px" src="https://readme-spotify-now-playing-derisorant.vercel.app/spotify" id="Frame2"></iframe>
-            <script type="text/javascript">
-                setInterval(refreshIframe2, 10000);
-                function refreshIframe2() {
-                    var frame = document.getElementById("Frame2");
-                    frame.src = frame.src;
-                }
-            </script>
-        </div>
     </div>
 
-    <div class="backgroundE rounded-pill mx-auto d-flex mt-5" style="justify-content: center;">
+    <!-- Youtube Music Embed -->
+    <div class="position-absolute top-50 end-0 translate-middle float-xxl-end test d-none d-xxl-flex">
+        <iframe width="250px" height="325px" class="rounded-4 musicThing" src="https://readme-spotify-now-playing-derisorant.vercel.app/spotify" id="Frame2"></iframe>
+        <script type="text/javascript">
+            setInterval(refreshIframe2, 10000);
+            function refreshIframe2() {
+            var frame = document.getElementById("Frame2");
+            frame.src = frame.src;
+            }
+        </script>
+    </div>
+
+    <div class="backgroundE position-absolute bottom-0 start-50 translate-middle rounded-pill d-flex" style="justify-content: center;">
 
         <button onclick="changeB1()" class="status">
             1
@@ -72,13 +73,14 @@
 
     </div>
 
-    <div class="container-fluid ">
-        <p class="mark rounded-pill" style="position: absolute; bottom: 0;">- Dante</p>
-        <div style="right: 0; bottom: 0; position: absolute;">
-            <div class="github-profile-badge" data-user="Derisorant"></div>
-            <script src="https://cdn.jsdelivr.net/gh/Rapsssito/github-profile-badge@latest/src/widget.min.js"></script>
-        </div>
-    </div>
+
+
+
+
+        <p class="mark position-absolute bottom-0 start-0 rounded-pill">- Dante</p>
+        
+        <div class="github-profile-badge position-absolute bottom-0 end-0" data-user="Derisorant"></div>
+        <script src="https://cdn.jsdelivr.net/gh/Rapsssito/github-profile-badge@latest/src/widget.min.js"></script>
 
     
 
@@ -88,3 +90,4 @@
 </html>
 
 <!-- 05/09/23 -->
+<!-- Fix music not being centered pls -->

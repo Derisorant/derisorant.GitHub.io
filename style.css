@@ -35,8 +35,6 @@
 }
 
 .backG {
-    vertical-align: middle;
-    margin-top: 15%;
     background-color: #111111;
     width: fit-content;
     height: fit-content;
@@ -44,6 +42,7 @@
         0px 5px 10px #181818,
         5px 0px 10px #181818,
         -5px 0px 10px #181818;
+    padding-bottom: 3em;
 }
 
 .status {
@@ -98,7 +97,6 @@ button {
 
 .backgroundE {
     background-color: #111111;
-    height: 50%;
     width: fit-content;
     padding: 0px 7.5px;
 }
@@ -113,4 +111,15 @@ button {
     width: fit-content;
     height: fit-content;
     padding: 0px 7.5px;
+}
+
+.test {
+    width: fit-content;
+}
+
+.musicThing {
+    box-shadow:
+        0px 5px 10px #111111,
+        5px 0px 10px #111111,
+        0px -3px 25px #1f1f1f;
 }
