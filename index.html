@@ -25,7 +25,7 @@
         <div class="container-fluid d-flex" style="justify-content: center;">
             <img class="pfp" src="/Assets/discord.png">
         </div>
-
+        
         <!-- Discord Embed -->
         <div class="container-fluid d-flex mt-5" style="justify-content: center;">
             <img src="https://discord.c99.nl/widget/theme-4/513078954673045534.png" id="thumbnail-img" class="rounded">
@@ -36,8 +36,15 @@
         </div>
 
         <!-- Youtube Music Embed -->
-        <div class="container d-flex mx-auto rounded justify-content-center">
-            <iframe style="width: 270px;" src="https://pixel.chat/6euC59ZL3BGUN7N/f570d01c-7a9c-4e7d-8d8b-a6c9ceb11223"></iframe>
+        <div class="container d-flex mx-auto mt-3 rounded justify-content-center">
+            <iframe style="width: 480px" src="https://readme-spotify-now-playing-derisorant.vercel.app/spotify" id="Frame2"></iframe>
+            <script type="text/javascript">
+                setInterval(refreshIframe2, 10000);
+                function refreshIframe2() {
+                    var frame = document.getElementById("Frame2");
+                    frame.src = frame.src;
+                }
+            </script>
         </div>
     </div>
 
