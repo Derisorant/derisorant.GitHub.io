@@ -1,8 +1,8 @@
-const btn = document.getElementById('btn');
-
 const image = document.getElementById('thumbnail-img');
 
-btn.addEventListener('click', () => {
+const refreshEveryMS = 60000;
+
+setInterval(() => {
   if (!image.src.includes('?')) {
     image.src = `${image.src}?${Date.now()}`;
   } else {
@@ -14,14 +14,7 @@ btn.addEventListener('click', () => {
   console.log('image refreshed');
 
   console.log(image.src);
-});
-
-
-function imgWidth() {
-  const imgW = document.getElementById('thumbnail-img').clientWidth;
-  console.log(imgW)
-};
-
+}, refreshEveryMS);
 
 // Background Button
 

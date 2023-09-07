@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=0.75">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.js">
@@ -19,35 +19,30 @@
 <body class="body">
 
     <!-- Covering Container -->
-    <div class="container-xxl backG position-absolute top-50 start-50 translate-middle rounded-5">
-
-        <!-- Profile Picture -->
-        <div class="container-fluid d-flex" style="justify-content: center;">
-            <img class="pfp" src="/Assets/discord.png">
-        </div>
-        
+    <div class="container backG position-absolute top-50 start-50 translate-middle p-2 rounded-5">
+      
         <!-- Discord Embed -->
-        <div class="container-fluid d-flex mt-5" style="justify-content: center;">
-            <img src="https://discord.c99.nl/widget/theme-4/513078954673045534.png" id="thumbnail-img" class="rounded">
-            <button id="btn">
-                <i class="fa-solid fa-rotate-right fa-xl" style="color: #ffffff;"></i>
-                <script src="index.js"></script>
-            </button>
+        <div class="d-flex rounded-pill" style="justify-content: center;">
+            <img src="https://discord.c99.nl/widget/theme-4/513078954673045534.png" width="450em" id="thumbnail-img" class="rounded img-fluid">
         </div>
 
     </div>
 
     <!-- Youtube Music Embed -->
-    <div class="position-absolute top-50 end-0 translate-middle float-xxl-end test d-none d-xxl-flex">
+    <div class="position-absolute top-50 end-0 translate-middle float-xxl-end d-none d-xxl-flex outline">
         <iframe width="250px" height="325px" class="rounded-4 musicThing" src="https://readme-spotify-now-playing-derisorant.vercel.app/spotify" id="Frame2"></iframe>
         <script type="text/javascript">
             setInterval(refreshIframe2, 60000);
             function refreshIframe2() {
             var frame = document.getElementById("Frame2");
             frame.src = frame.src;
-            }
+            };
         </script>
     </div>
+
+    <iframe src="">
+
+    </iframe>
 
 
     <div class=" d-flex position-absolute bottom-0 translate-middle start-50 backgroundE rounded-pill test outline" style="padding-left: 7.5px; padding-right: 2px;">
@@ -63,42 +58,26 @@
         </script>
     </div>
 
-    <div class="backgroundE position-absolute bottom-0 start-50 translate-middle rounded-pill d-flex mb-5" style="justify-content: center;">
-
+    <div class="backgroundE position-absolute bottom-0 start-50 translate-middle rounded-pill d-flex mb-5 outline" style="justify-content: center;">
         <button onclick="changeB1()" class="status">
             1
         </button>
-
         <button onclick="changeB2()" class="status">
             2
         </button>
-
         <button onclick="changeB3()" class="status">
             3
         </button>
-
         <button onclick="changeB4()" class="status">
             4
         </button>
-
         <button onclick="changeB5()" class="status">
             5
         </button>
-
+        <script src="index.js"></script>
     </div>
-
-
-
-
-
-        <p class="mark position-absolute bottom-0 start-0 rounded-pill">- Dante</p>
-        
-        <div class="github-profile-badge position-absolute bottom-0 end-0" data-user="Derisorant"></div>
-        <script src="https://cdn.jsdelivr.net/gh/Rapsssito/github-profile-badge@latest/src/widget.min.js"></script>
-
-    
-
-
+        <div class="github-profile-badge position-absolute bottom-0 end-0 d-none d-sm-block" data-user="Derisorant"></div>
+        <script src="https://cdn.jsdelivr.net/gh/Rapsssito/github-profile-badge@latest/src/widget.min.js"></script> 
 </body>
 
 </html>
