@@ -55,3 +55,7 @@ function changeB5() {
   const name = document.querySelector(".body")
   document.body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60))," + backG5;
 }
+
+// Getting Form Input for Background Url
+
+

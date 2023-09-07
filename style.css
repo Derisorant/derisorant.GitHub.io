@@ -22,6 +22,24 @@
     background-position: center;
 }
 
+input::placeholder {
+    font-family: 'San Francisco';
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    background: none;
+    font-family: 'San Francisco';
+    border: none;
+    color: white;
+}
+
+.buttonClass {
+    color: white;
+    font-family: 'San Francisco';
+}
+
 .outline {
     border-style: solid;
     border-color: white;
@@ -95,10 +113,15 @@ button {
     box-shadow: 0px 7.5px 10px black;
 }
 
+input {
+    color: white;
+}
+
 .backgroundE {
     background-color: #111111;
     width: fit-content;
-    padding: 0px 7.5px;
+    padding-left: 7.5px;
+    padding-right: 2px;
 }
 
 .mark {
@@ -122,4 +145,16 @@ button {
         0px 5px 10px #111111,
         5px 0px 10px #111111,
         0px -3px 25px #1f1f1f;
+}
+
+.buttonStyle {
+    background-color: white;
+    font-family: 'San Francisco';
+    color: black;
+    padding: 0px 10px;
+}
+
+.urlButton {
+    border: none;
+    background: none;
 }
