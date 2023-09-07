@@ -120,8 +120,7 @@ input {
 .backgroundE {
     background-color: #111111;
     width: fit-content;
-    padding-left: 7.5px;
-    padding-right: 2px;
+    padding: 0 10px;
 }
 
 .mark {
