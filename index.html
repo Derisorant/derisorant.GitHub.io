@@ -27,7 +27,14 @@
         </div>
 
         <div class="d-flex d-none d-lg-flex d-md-flex d-xl-flex d-xxl-none" style="justify-content: center">
-            <iframe class="card-img" style="max-width: 480px;" src="https://readme-spotify-now-playing-hnlrjm87l-derisorant.vercel.app/spotify"></iframe>
+            <iframe class="card-img" style="max-width: 480px;" src="https://readme-spotify-now-playing-hnlrjm87l-derisorant.vercel.app/spotify" id="Frame3"></iframe>
+            <script>
+                setInterval(refreshIframe3, 60000);
+                function refreshIframe3() {
+                    var frame = document.getElementById("Frame3");
+                    frame.src = frame.src;
+                };
+            </script>
         </div>
 
     </div>
